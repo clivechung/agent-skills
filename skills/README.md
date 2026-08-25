@@ -13,6 +13,7 @@ This folder holds custom agent skills developed in this project, grouped by cate
 ## 🎮 For-Fun Skills
 
 - [**code-haiku**](for-fun/code-haiku/SKILL.md) — Summarizes code changes, pull requests, or debugging sessions as poetic 5-7-5 syllable haikus.
+- [**pour-over-coffee-brewing**](for-fun/pour-over-coffee-brewing/SKILL.md) — Master guide for pour-over coffee brewing, Timemore S3 Chestnut grinder calibration, 3-Pour and 4:6 brewing methods, and extraction troubleshooting.
 
 ---
 

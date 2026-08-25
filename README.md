@@ -1,15 +1,15 @@
-# GenAI Skill Development Workspace
+# Agent Skills Development Workspace
 
 A dedicated workspace for authoring, structuring, testing, and refining AI agent skills.
 
-This project is built around **Matt Pocock's `write-a-skill` / `writing-great-skills`** methodology and adheres to the Antigravity & Agent Skills standard specification.
+This repository is inspired by **Matt Pocock's `write-a-skill` / `writing-great-skills`** methodology and adheres to the Antigravity & Agent Skills standard specification.
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-genai-skills/
+agent-skills/
 ├── .agents/
 │   └── skills/
 │       └── write-a-skill/           # Meta-skill for authoring new skills
