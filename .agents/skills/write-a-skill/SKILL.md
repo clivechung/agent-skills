@@ -127,7 +127,7 @@ See the full [Best Practices Guide](references/best-practices.md) and [Quality C
 ## Phase 4: Finalize
 
 1. Save all files to `skills/<category>/<skill-name>/`.
-2. Register the new skill in [`skills/README.md`](../../skills/README.md) under its respective category section.
+2. Register the new skill in the root [`README.md`](../../README.md) catalog table.
 3. Present a summary of the created skill and its trigger conditions to the user.
 4. Invite the user to test the skill with a real-world prompt.
 
