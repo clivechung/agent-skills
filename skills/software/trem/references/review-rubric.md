@@ -24,6 +24,7 @@ When reviewing code, assign a rating to each of the 4 pillars:
   - All external dependencies (I/O, network, database, time, crypto) are injected.
   - Business logic is isolated from infrastructure.
   - 100% of branch logic can be unit-tested without network/DB mocks or monkey-patching.
+  - *Prefer using the `tdd` skill (Red-Green-Refactor) during code generation and refactoring to verify code against automated test cases.*
 - 🟡 **Needs Work**:
   - Some optional dependencies instantiated inline with default fallbacks.
   - Unit testing requires extensive mocking libraries or reflection.
@@ -75,3 +76,57 @@ When reviewing code, assign a rating to each of the 4 pillars:
   - Monolithic God object/function (>100 lines).
   - Catch-all exception blocks swallowing errors silently.
   - High risk of regression cascade across unrelated modules.
+
+---
+
+## 🛡️ Mandatory Final TREM Rule Set Verification Matrix
+
+At the conclusion of every code review, refactoring, or code generation session, the reviewer must audit the final code against each item in this rule set. All items must achieve **PASS (✅)** status before concluding the session.
+
+| Pillar | Rule ID | Quality Standard & Verification Criteria | Required State for Pass |
+| :--- | :--- | :--- | :--- |
+| **Testable** | **T1** | **Dependency Inversion & Injection** | All I/O, network clients, databases, and filesystem access are injected via interfaces/parameters; no inline `new Service()`. |
+| **Testable** | **T2** | **Deterministic Time & Environment** | Clocks, timestamps, RNG, and environment variables are parameterized or provided via clock abstractions. |
+| **Testable** | **T3** | **Isolated Business Logic** | Pure domain calculations and validations are partitioned from infrastructure side-effects. |
+| **Testable** | **T4** | **Observability & Clear Outputs** | All routines return explicit values, typed result structures, or domain errors; zero hidden side effects. |
+| **Readable** | **R1** | **Intention-Revealing Naming** | Variables, functions, and types use unambiguous domain nomenclature; booleans use predicate phrasing (`isX`, `hasY`). |
+| **Readable** | **R2** | **Flat Control Flow & Guard Clauses** | Indentation depth does not exceed 2 levels; validations and preconditions exit early with guard clauses. |
+| **Readable** | **R3** | **Explanatory Rationale Comments** | Comments explain the *why* (domain logic, performance trade-offs, constraints), never restating obvious syntax. |
+| **Readable** | **R4** | **Strict Type Contracts** | Strict typing enforced across inputs and outputs; no untyped `any`, raw `Object`, or primitive obsession. |
+| **Extensible** | **E1** | **Open-Closed Principle (OCP)** | New variants, channels, or strategies can be added by implementing contracts without modifying core orchestrator logic. |
+| **Extensible** | **E2** | **Composition Over Inheritance** | Behavior is composed via strategies, adapters, and functional composition rather than deep class hierarchies. |
+| **Extensible** | **E3** | **Narrow Role Interfaces** | Interfaces are segregated, cohesive, and decoupled from third-party vendor SDK types. |
+| **Maintainable** | **M1** | **Single Responsibility Principle (SRP)** | Every class/module has a single reason to change; functions remain small, focused, and cohesive ($\le 30$ lines). |
+| **Maintainable** | **M2** | **Encapsulation & Blast Radius** | Internal state and implementation details are private; module interfaces minimize ripple effects across consumers. |
+| **Maintainable** | **M3** | **Structured Error Handling** | No swallowed exceptions or empty `catch` blocks; errors are wrapped in typed domain exceptions with contextual metadata. |
+
+---
+
+## 🏁 Session Sign-Off Decision Flow
+
+```
+┌──────────────────────────────────────────────────────────┐
+│  Code Review / Generation / Refactoring in Progress      │
+└────────────────────────────┬─────────────────────────────┘
+                             │
+                             ▼
+┌──────────────────────────────────────────────────────────┐
+│  Apply Refactorings & Remediations                       │
+└────────────────────────────┬─────────────────────────────┘
+                             │
+                             ▼
+┌──────────────────────────────────────────────────────────┐
+│  Audit Final Code Against TREM Rule Set (T1-T4, R1-R4,   │
+│  E1-E3, M1-M3)                                           │
+└────────────────────────────┬─────────────────────────────┘
+                             │
+            ┌────────────────┴────────────────┐
+            ▼                                 ▼
+   [Any Rule Violations?]             [All Rules Passed?]
+            │                                 │
+            ▼ YES                             ▼ YES
+┌───────────────────────────┐     ┌───────────────────────────────┐
+│ Fix residual anti-pattern │     │ Generate Final Review Report  │
+│ & re-audit                │     │ with Verified Sign-Off Table  │
+└───────────────────────────┘     └───────────────────────────────┘
+```

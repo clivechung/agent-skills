@@ -26,6 +26,10 @@ Testable code is code whose correctness can be verified in isolation quickly, de
 4. **Observability & Assertion Clarity**
    - Functions should produce observable outcomes: return values, state changes, or explicit typed errors rather than silent internal mutations.
 
+5. **Preference for Test-Driven Development (`tdd` skill)**
+   - When generating new features or refactoring modules under TREM, **prefer using the `tdd` skill** (Red $\to$ Green $\to$ Refactor).
+   - Writing tests first ensures the API contract is naturally testable, decoupled, and verifiable against automated assertions before writing production logic.
+
 ---
 
 ## 2. Readability (R)
