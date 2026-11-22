@@ -25,8 +25,9 @@ Never apply a single rigid recipe to every bean. Match the pouring dynamics to b
    - **Ratio:** 1:15 (e.g., 20g coffee to 300g water).
 
 2. **Route B: Medium-to-Dark / Central American / Nutty & Chocolate Blends**
-   - **Method:** Continuous 3-Pour Slurry Immersion.
-   - **Physics:** Highly porous, brittle beans produce excessive micro-fines. Allowing multiple full drawdowns forces fines into paper pores, causing micro-channeling and astringency. Continuous slurry immersion keeps fines suspended in the water column and cuts off extraction at 2:35–2:45 before bitter tannins dissolve.
+   - **Method:** Continuous 3-Pour Slurry Immersion (Primary) OR High-Sweetness 4:6 Fallback (for commercial dark roasts).
+   - **Physics:** Highly porous, brittle beans produce excessive micro-fines. Continuous slurry immersion keeps fines suspended in the water column and cuts off extraction at 2:35–2:45 before bitter tannins dissolve.
+   - **Commercial / Aged Dark Roast Fallback (High-Sweetness 4:6):** If a commercial or carbonized dark roast tastes thin, hollow, or lacks sweetness on a 3-pour routine, switch to a tight **1:14 ratio (20g : 280g)** using a **4-Pour High-Sweetness 4:6 split (`40g` bloom ➔ `+72g` ➔ `+84g` ➔ `+84g`)** at **85°C** on a coarse grind (**Timemore S3: 8.0**). The coarse grind prevents fines channeling while the compressed 40g/72g front-loaded split concentrates caramelized sugars and body.
    - **Water Temp:** 83°C to 85°C.
    - **Ratio:** 1:14 to 1:15.
 
@@ -40,7 +41,8 @@ Consistent particle distribution is essential to prevent filter stalling and ast
 - **Why:** Custom S2C890 (Spike-to-Cut) burr set minimizes ultra-fines (200–250 μm). External 0.1-step lens ring makes repeatability effortless without opening the catch cup.
 - **Settings Reference (0.0 to 9.0 collar scale):**
   - Standard 3-Pour: **5.5 – 6.5** (Medium)
-  - Adapted 4:6 Method: **7.5 – 8.6** (Medium-Coarse / Coarse)
+  - High-Sweetness 4:6 (Commercial Dark Fallback): **8.0** (Coarse)
+  - Adapted 4:6 Method (Light Roast): **8.2 – 8.6** (Medium-Coarse / Coarse)
 
 ### Universal Cross-Calibration
 - **1Zpresso (K-Series / J-Series):** 7.5–8.5 (4:6) | 6.0–7.0 (3-Pour)
@@ -70,14 +72,14 @@ Always state both the incremental pour amount (+XX g) and cumulative scale total
 Always conclude with a dedicated sensory expectation and diagnostic section:
 - **Flavor Arc & Cooling Curve:** Describe how the flavor evolves from hot (>65°C) to ideal drinking temp (45°C–55°C).
 - **If Astringent / Dry / Bitter:** Provide exact adjustment (e.g., lower temp to 83°C, coarsen grind by 0.5, reduce agitation).
-- **If Sour / Hollow / Thin:** Provide exact adjustment (e.g., tighten grind finer by 0.5, ensure 85°C water temp).
+- **If Sour / Hollow / Thin:** Provide exact adjustment (e.g., tighten grind finer by 0.5, ensure 85°C water temp; for commercial dark roasts, pivot to the 1:14 High-Sweetness 4:6 template).
 - **If Muted / Dull Acidity:** Provide fine-tuning tip.
 
 ---
 
 ## Dialed Brew Templates
 
-### Recipe 1: Adapted 4-Pour Sweetness Method (Route A)
+### Recipe 1: Adapted 4-Pour Sweetness Method (Route A — Light / Washed)
 - **Dose & Ratio:** 20g coffee to 300g water (1:15)
 - **Grind:** Medium-Coarse (Timemore S3: 8.2–8.6)
 - **Water Temp:** 85°C
@@ -91,7 +93,7 @@ Always conclude with a dedicated sensory expectation and diagnostic section:
 | **1:30** | **+90g** | **Total: 210g** | Low-height center pour (2–3 cm above slurry) to avoid churning fines. Drains by ~2:10. |
 | **2:15** | **+90g** | **Total: 300g** | Gentle center pour. Complete drawdown at 3:00. |
 
-### Recipe 2: Standard 3-Pour Method (Route B)
+### Recipe 2: Standard 3-Pour Method (Route B — Specialty Medium-Dark)
 - **Dose & Ratio:** 20g coffee to 300g water (1:15)
 - **Grind:** Medium (Timemore S3: 6.0–6.5)
 - **Water Temp:** 84°C–85°C
@@ -104,3 +106,17 @@ Always conclude with a dedicated sensory expectation and diagnostic section:
 | **0:45** | **+100g** | **Total: 200g** | Gentle spiral inward/outward to raise slurry level. |
 | **1:30** | **+100g** | **Total: 300g** | Low-height center stream to minimize bed turbulence. |
 | **2:35–2:45** | — | **300g** | Complete drawdown. |
+
+### Recipe 3: High-Sweetness 4:6 Method (Route B Fallback — Commercial / Oily Dark Roast)
+- **Dose & Ratio:** 20g coffee to 280g water (1:14)
+- **Grind:** Coarse (Timemore S3: 8.0)
+- **Water Temp:** 85°C
+- **Target Drawdown:** 3:10 to 3:20
+
+#### Pacing Schedule:
+| Time | Pour Amount | Cumulative Target | Technique & Action |
+| :--- | :--- | :--- | :--- |
+| **0:00** | **+40g** | **Total: 40g** | High-density sweetness bloom. Gentle swirl; drain completely by ~0:40. |
+| **0:45** | **+72g** | **Total: 112g** | Phase 1 sweetness sweep. Gentle outward spiral; drains by ~1:25. |
+| **1:30** | **+84g** | **Total: 196g** | Phase 2 strength & body. Low-height (2–3 cm) center pour; drains by ~2:10. |
+| **2:15** | **+84g** | **Total: 280g** | Final strength pour. Gentle center stream; complete drawdown at ~3:15. |
