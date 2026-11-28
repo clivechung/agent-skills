@@ -1,8 +1,8 @@
-# Reusable Agent Skills
+# AI Agent Skills
 
-A modular repository of **reusable agent skills and capabilities** designed for autonomous AI agents and coding assistants to execute structured, automated tasks. The catalog spans mission-critical engineering workflows—such as architecture reviews and Python API refactoring—to lifestyle tasks like precision pour-over coffee brewing.
+A personal, curated collection of portable **AI agent skills** for coding assistants and autonomous workflows—spanning software engineering, AI/MCP tooling, and everyday lifestyle guides.
 
-This repository is inspired by **Matt Pocock's `write-a-skill` / `writing-great-skills`** methodology and adheres to the Antigravity & Agent Skills standard specification.
+Structured around the Agent Skills specification and inspired by Matt Pocock's `write-a-skill` methodology, each skill is self-contained and ready to use across Gemini, Claude, ChatGPT, and MCP-compatible agents.
 
 ---
 
